@@ -1,0 +1,20 @@
+.feature {
+	width: 100%;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5em;
+	text-align: center;
+}
+
+.feature__title {
+	color: var(--color-gray-800);
+	font-size: 15px;
+}
+
+.feature__description {
+	color: var(--color-gray-100);
+	font-size: 28px;
+}

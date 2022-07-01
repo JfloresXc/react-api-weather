@@ -1,0 +1,71 @@
+.weather {
+	display: flex;
+	flex-direction: column;
+	gap: 4.5em;
+	color: var(--color-light);
+}
+
+.weather__header {
+	margin-bottom: 10em;
+	margin-top: 2em;
+}
+
+.weather__country {
+	font-size: 40px;
+}
+
+.weather__temperature {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas:
+		"number grade grade"
+		"number description description"
+		"date maxmin maxmin";
+	width: 400px;
+	gap: 1em;
+}
+
+.weather__temperature-number {
+	grid-area: number;
+	font-size: 80px;
+}
+
+.weather__temperature-grade {
+	grid-area: grade;
+	font-size: 25px;
+	align-self: center;
+	padding: 0.3em 0 0 0;
+}
+
+.weather__temperature-description {
+	grid-area: description;
+	font-size: 20px;
+}
+
+.weather__date {
+	grid-area: date;
+	font-size: 15px;
+}
+
+.weather__temperature-maxmin {
+	grid-area: maxmin;
+	font-size: 15px;
+}
+
+.weather__footer-title {
+	margin-bottom: 2em;
+	font-size: 1em;
+	font-weight: 100;
+}
+
+.weather__separator {
+	outline: 1px solid var(--color-gray-600);
+	width: 100%;
+}
+
+/* MEDIAQUERIES */
+@media screen and (max-width: 450px) {
+	.weather__temperature {
+		width: 300px;
+	}
+}
